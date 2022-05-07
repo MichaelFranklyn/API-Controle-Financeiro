@@ -1,0 +1,129 @@
+.card_editarOuAdicionar {
+    height: 879px;
+    padding: 61px 62px 48px;
+}
+
+.btns {
+    display: flex;
+    margin-bottom: 38px;
+}
+
+.botao_entrada, .botao_saida {
+    all: unset;
+    box-sizing: border-box;
+
+    width: 245px;
+    height: 60px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #B9B9B9;
+
+    cursor: pointer;
+}
+
+.botao_entrada:hover {
+    background: #7978D9;
+}
+
+.botao_saida:hover {
+    background: #FF576B;
+}
+
+.botao_limpo_entrada {
+    all: unset;
+    box-sizing: border-box;
+
+    width: 245px;
+    height: 60px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #B9B9B9;
+
+    cursor: pointer;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.botao_limpo_entrada:hover {
+    background: #7978D9;
+}
+
+.botao_limpo_saida:hover {
+    background: #FF576B;
+}
+
+.botao_limpo_saida {
+    all: unset;
+    box-sizing: border-box;
+
+    width: 245px;
+    height: 60px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #B9B9B9;
+
+    cursor: pointer;
+    border-radius: 0px 10px 10px 0px;   
+}
+
+.botao_entrada {
+    all: unset;
+    box-sizing: border-box;
+
+    width: 245px;
+    height: 60px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #7978D9;
+
+    cursor: pointer;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.botao_saida {
+    all: unset;
+    box-sizing: border-box;
+
+    width: 245px;
+    height: 60px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FF576B;
+
+    cursor: pointer;
+    border-radius: 0px 10px 10px 0px;   
+}
+
+
+.botao_confirmar_editOuAdicionar {
+    margin-top: 17px;
+}
+
+.botao_confirmar button:hover {
+    opacity: 0.8;
+}
+
+.setaCategorias img {
+    position: absolute;
+    top: 451px;
+    right: 81px;
+}

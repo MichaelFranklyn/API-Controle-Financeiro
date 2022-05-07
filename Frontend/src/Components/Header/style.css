@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100vw;
+    height: 86px;
+    padding: 20px 100px 20px;
+}
+
+.logo_imagem,
+.perfilImg {
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 150px;
+    height: 42px;
+}
+
+nav h1 {
+    font-family: 'Rubik';
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.logoutImg {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}

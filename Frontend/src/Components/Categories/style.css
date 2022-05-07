@@ -1,0 +1,77 @@
+.categorias {
+    width: 959px;
+    height: 205px;
+    padding: 32px;
+    margin-top: 30px;
+
+    background: #FAFAFA;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #B9B9B9;
+}
+
+.categoria {
+    display: flex;
+    align-items: center;
+    width: 264px;
+    height: 78px;
+    gap: 9px;
+}
+
+.btn_categorias {
+    width: 264px;
+    display: flex;
+    margin: 22px 0px;
+    flex-wrap: wrap;
+}
+
+.btn_categorias button {
+    all: unset;
+    width: 80px;
+    height: 20px;
+    padding: 5px 8px;
+    gap: 10px;
+
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #000;
+    background: #FAFAFA;
+
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.filtro_categorias {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filtro_categorias button {
+    all: unset;
+    width: 98px;
+    height: 30px;
+    margin-right: 18px;
+
+    background: #FAFAFA;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    text-align: center;
+    color: #000;
+
+    font-weight: 700;
+    font-size: 12px;
+
+    cursor: pointer;
+}

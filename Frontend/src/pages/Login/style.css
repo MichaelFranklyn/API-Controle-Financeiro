@@ -1,0 +1,62 @@
+.conteudo_login {
+    margin-top: 108px;
+}
+
+.conteudo_texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFF;
+}
+
+.conteudo_texto h1 {
+    margin-bottom: 33px;
+    font-size: 52px;
+}
+
+.conteudo_texto span {
+    color: #7978D9;
+}
+
+.conteudo_texto p {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 43px;
+}
+
+.conteudo_texto button {
+    all: unset;
+    box-sizing: border-box;
+
+    width: 280px;
+    height: 53px;
+
+    background: #7978D9;
+    border-radius: 5px;
+
+    padding: 11px 47px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.conteudo_texto button:hover {
+    opacity: 0.8;
+}
+
+.form_login {
+    padding: 60px 32px 49px;
+    height: 535px;
+}
+
+.form_login h3 {
+    margin-bottom: 48px;
+}
+
+.form_login button {
+    margin-top: 42px;
+}

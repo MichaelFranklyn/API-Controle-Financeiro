@@ -1,0 +1,41 @@
+.conteudo_geral_signup {
+    background: url('../../assets/background.jpg');
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0px 0px 90px;
+    height: 120vh;
+    width: 100vw;
+
+}
+
+.form_cadastro {
+    padding: 50px 32px 50px;
+    height: 750px;
+    font-family: 'Rubik';
+    margin-top: 32px;
+}
+
+.form_cadastro h3 {
+    margin-bottom: 42px;
+}
+
+.form_cadastro button {
+    margin-top: 7px;
+}
+
+.form_cadastro h4 {
+    font-family: 'Lato';
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #7B61FF;
+    margin-top: 8px;
+}
+
+.form_cadastro a {
+    cursor: pointer;
+}

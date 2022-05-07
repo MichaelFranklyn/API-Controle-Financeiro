@@ -1,0 +1,291 @@
+.conteudo_home{
+    background: linear-gradient(90.23deg, #05EDE3 0.02%, #645FFB 99.63%);
+}
+
+.conteudo_main {
+    display: flex;
+    justify-content: center;
+    padding: 55px 0px 0;
+    background: #FAFAFA;
+
+    height: calc(100vh - 116px);
+    width: 100vw;
+    border-radius: 60px 60px 0 0;
+    position: relative
+}
+
+.ladoEsquerdo {
+    display:flex;
+    flex-direction: column;
+}
+
+.botao_filtrar {
+    all: unset;
+    box-sizing: border-box;
+
+    width: 80px;
+    height: 30px;
+
+    background: #FAFAFA;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 14px;
+
+    cursor: pointer;
+}
+
+.transacoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.header_transacoes {
+    width: 964px;
+    height: 58px;
+
+    background: #FAFAFA;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    margin-top: 26px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0 27px;
+
+    font-family: 'Lato';
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.header_transacoes h4 {
+    width: 95px;
+    text-align: center;
+}
+
+.dataHeader {
+    display: flex;
+    align-items: center;
+    width: 95px;
+}
+
+.dataHeader h3 {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.dataHeader img {
+    margin-left: 8px;
+}
+
+.lista_transacoes {
+    height: 60px;
+    width: 964px;
+    padding: 0 40px 0 27px;
+
+    border-bottom: 1px solid #E0E0E0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+        position: relative;
+}
+
+.lista_transacoes h4 {
+    width: 95px;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.lista_transacoes h5 {
+    text-align: center;
+    width: 95px;
+
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.icons, .divNeutra {
+    width: 51px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    text-align:center ;
+    position: relative;   
+}
+
+.icons img {
+    cursor: pointer;
+}
+
+.resumo {
+    display: flex;
+    flex-direction: column;
+    margin: 56px 0 0 34px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.card {
+    width: 236px;
+    height: 196px;
+
+    background: #FAFAFA;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    padding: 26px 33px 31px 33px;
+    margin-bottom: 16px;
+}
+
+.card h1 {
+    margin-bottom: 23px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2F2F2F;
+}
+
+.situacao,
+.resultado {
+    display: flex;
+    justify-content: space-between;
+}
+
+.condicao,
+.valores {
+    height: 42px;
+    width: 81px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.condicao h3, .valores h3 {
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.condicao h3 {
+    color: #2F2F2F;
+}
+
+.valor_entrada {
+    color: #645FFB;
+}
+
+.valor_saida {
+    color: #FA8C10;
+}
+
+.resultado {
+    height: 34px;
+    margin-top: 17px;
+    border-top: 1px solid #EAEAEA;
+    padding-top: 17px;
+}
+
+.condicao_saldo {
+    font-size: 14px;
+    line-height: 17px;
+    color: #2F2F2F;
+}
+
+.valor_saldo {
+    font-size: 14px;
+    line-height: 17px;
+    color: #3A9FF1;
+}
+
+.btn-register button {
+    all: unset;
+    width: 236px;
+    height: 46px;
+    background: #7978D9;
+    border-radius: 5px;
+    color: #FFF;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+}
+
+.btn-register button:hover {
+    opacity: 0.8;
+}
+
+.lixeira {
+    position: relative;
+}
+
+.excluir-transacao {
+    width: 111px;
+    height: 46px;
+
+    background: #E4F2FD;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Rubik';
+    position: relative;
+    position: absolute;
+    top: 51px;
+    right: 40px; 
+}
+
+.setinha img {
+    position: absolute;
+    top: -9px;
+    right: 4px;
+}
+
+.excluir-transacao span {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.btn_apagar {
+    width: 81px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+
+.btn_apagar button {
+    all: unset;
+    box-sizing: border-box;
+
+    padding: 2px 10px;
+    width: 37px;
+    height: 15px;
+    border-radius: 4px;
+
+    font-size: 9px;
+    line-height: 11px;
+
+    cursor: pointer;
+}
+
+.btn_apagar .botaoPositivo{
+    background: #3A9FF1;
+}
+
+.btn_apagar .botaoNegativo{
+    background: #FF576B;
+}
+
