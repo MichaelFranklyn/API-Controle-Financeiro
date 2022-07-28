@@ -6,18 +6,14 @@ import { getItem } from '../../utils/storage';
 import Header from '../../Components/Header'
 import ProfileCard from '../../Components/ProfileCard'
 import EditCard from '../../Components/EditCard';
-import Categories from '../../Components/Categories';
-import Filtro from '../../assets/filtro.svg'
 import Caneta from '../../assets/caneta.svg'
 import Lixeira from '../../assets/lixeira.svg'
-import setaData from '../../assets/setaData.svg'
 
 export default function Home() {
     const token = getItem('token')
     const [transactions, setTransactions] = useState([]);
     const [saldo, setSaldo] = useState([]);
-    const [filter, setFilter] = useState(false);
-    const [days, setDays] = useState(['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']);
+    const [days] = useState(['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']);
     const [showNew, setShowNew] = useState(false);
     const [showEdit, setShowEdit] = useState(false);
     const [perfil, setPerfil] = useState(false);
@@ -26,7 +22,7 @@ export default function Home() {
 
     useEffect(() => {
         loadTransactions()
-    }, [])
+    },[])
 
     async function loadTransactions() {
         try {
@@ -60,7 +56,8 @@ export default function Home() {
 
     async function handleDeleteTransaction(id) {
         try {
-            const deleteTransaction = api.delete(`transacao/${id}`, {
+
+            api.delete(`transacao/${id}`, {
                 headers: {
                     'Authorization': `Bearer ${token}`,
                     'Content-Type': 'application/json',
@@ -98,22 +95,10 @@ export default function Home() {
             <div className='conteudo_main'>
                 <div className='ladoEsquerdo'>
 
-                    <div className='filter'>
-                        <button className='botao_filtrar' onClick={() => setFilter(!filter)}><img src={Filtro} /> Filtrar</button>
-                    </div>
-
-                    {filter &&
-                        <Categories
-                            setTransactions={setTransactions}
-                            loadTransactions={loadTransactions}
-                        />
-                    }
-
                     <div className='transacoes'>
                         <div className='header_transacoes'>
                             <div className='dataHeader'>
                                 <h3>Data</h3>
-                                <img src={setaData}/>
                             </div>
                             <h4>Dia da semana</h4>
                             <h4>Descrição</h4>
@@ -130,8 +115,8 @@ export default function Home() {
                                     <h5>{transaction.categoria_nome}</h5>
                                     <h5 className='valor'>{`R$ ${(transaction.valor / 100).toFixed(2)}`}</h5>
                                     <div className='icons'>
-                                        <img onClick={() => handleEditTransaction(transaction.id)} src={Caneta} />
-                                        <img className='lixeira' onClick={() => setModalDelete(true)} src={Lixeira} />
+                                        <img onClick={() => handleEditTransaction(transaction.id)} src={Caneta} alt='icon caneta'/>
+                                        <img className='lixeira' onClick={() => setModalDelete(true)} src={Lixeira} alt='icon lixeira'/>
                                         {modalDelete &&
                                             <div key={transaction.id} className='excluir-transacao'>
                                                 <span>Apagar item?</span>
